@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const todoItem = document.createElement('li');
         todoItem.classList.add('flex', 'items-center', 'justify-between', 'bg-gray-100', 'p-3', 'rounded-md', 'shadow-sm');
+
+        const todoLabel = document.createElement('span');
+        todoLabel.textContent = todoText;
+        todoLabel.classList.add('todo-text', 'text-gray-800', 'flex-grow', 'mr-2');
     }
 
 });
