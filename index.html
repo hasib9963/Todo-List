@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
 </head>
-<body>
+<body  class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-xl">
+        <h1 class="text-2xl font-bold text-center mb-4 text-gray-800">To-Do List</h1>
+        
+        <!-- Input Field and Add Button -->
+        <div class="flex mb-4">
+            <input id="new-todo" type="text" placeholder="Enter new todo item..." class="w-full p-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button id="add-btn" class="bg-blue-500 text-white px-4 py-2 mx-1 rounded-r-md hover:bg-green-600">Add</button>
+        </div>
+
+        <!-- To do List items -->
+        <ul id="todo-list" class="space-y-3"></ul>
+    </div>
     
 </body>
 </html>
