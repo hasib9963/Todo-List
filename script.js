@@ -72,7 +72,9 @@ document.addEventListener('DOMContentLoaded', function () {
         todoItem.appendChild(todoLabel);
         todoItem.appendChild(actionsDiv);
 
-        taskList.appendChild(taskItem);
+        todoList.appendChild(todoItem);
+
+        newTodoInput.value = '';
     }
 
 });
