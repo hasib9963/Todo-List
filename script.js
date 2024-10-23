@@ -64,6 +64,13 @@ document.addEventListener('DOMContentLoaded', function () {
         deleteBtn.addEventListener('click', () => {
             todoList.removeChild(todoItem);
         });
+
+        actionsDiv.appendChild(completeBtn);
+        actionsDiv.appendChild(editBtn);
+        actionsDiv.appendChild(deleteBtn);
+
+        todoItem.appendChild(todoLabel);
+        todoItem.appendChild(actionsDiv);
     }
 
 });
