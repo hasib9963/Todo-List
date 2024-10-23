@@ -57,6 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 editBtn.textContent = 'Edit';
             }
         });
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.classList.add('text-sm', 'bg-red-500', 'text-white', 'px-3', 'py-1', 'rounded-md', 'hover:bg-red-600');
+        deleteBtn.addEventListener('click', () => {
+            todoList.removeChild(todoItem);
+        });
     }
 
 });
