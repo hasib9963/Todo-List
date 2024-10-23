@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const todoLabel = document.createElement('span');
         todoLabel.textContent = todoText;
         todoLabel.classList.add('todo-text', 'text-gray-800', 'flex-grow', 'mr-2');
+
+        const actionsDiv = document.createElement('div');
+        actionsDiv.classList.add('flex', 'items-center', 'space-x-2');
     }
 
 });
