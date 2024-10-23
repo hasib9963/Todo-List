@@ -22,6 +22,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const actionsDiv = document.createElement('div');
         actionsDiv.classList.add('flex', 'items-center', 'space-x-2');
+
+        const completeBtn = document.createElement('button');
+        completeBtn.textContent = 'Complete';
+        completeBtn.classList.add('text-sm', 'bg-green-500', 'text-white', 'px-3', 'py-1', 'rounded-md', 'hover:bg-green-600');
+        completeBtn.addEventListener('click', () => {
+            todoLabel.classList.toggle('line-through');
+            completeBtn.textContent = completeBtn.textContent === 'Complete' ? 'Uncomplete' : 'Complete';
+        });
     }
 
 });
